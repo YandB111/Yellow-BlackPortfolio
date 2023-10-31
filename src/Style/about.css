@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  margin-top: auto;
+}
+
+.img {
+  flex: 1 1 200px;
+  min-height: 300px;
+  height: auto;
+}
+
+.contenido {
+  flex: 1 1 300px;
+  background-color: #000000;
+  padding: 20px;
+}
+
+.head {
+  color: #ff6600;
+  font-size: 48px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.para {
+  color: #f8f53b;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  transition: transform 0.3s;
+}
+
+.img:hover {
+  transform: scale(1.05); /* Zoom in on hover */
+}
+
+.head:hover {
+  color: #fae84b; /* Change text color on hover */
+}
+
+/* Card 3 */
+:root {
+  --black: #000;
+  --white: #000000;
+  --greyLight: #e1e3e5;
+  --greyMedium: #8a959e;
+  --greyDark: #323a45;
+  --purple: #d8d278;
+  --orange: #ff6d3a;
+  --blue: #3498db;
+  --defaultTransition: all 250ms ease-in-out;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  flex: 0 1 calc(33.33% - 20px);
+  border: 3px solid var(--purple);
+  margin: 10px;
+  padding: 20px;
+  background: var(--white);
+  text-align: left;
+  transition: var(--defaultTransition);
+}
+
+.cards__item:hover {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: var(--white);
+  outline: 0;
+}
+
+.cards__date {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
+.cards__title {
+  font-size: 1rem;
+  line-height: 3rem;
+  font-weight: 300;
+  margin: 20px 0;
+}
+
+/* Default style for cards__more */
+.cards__more {
+  color: var(--greyMedium);
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  border-bottom: 1px solid var(--greyLight);
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+
+/* Style for cards__more when clicked */
+.cards__item:hover .cards__more,
+.cards__item:focus .cards__more {
+  color: var(--purple); /* Change the color to purple when hovering or focusing */
+  border-bottom: 1px solid var(--purple); /* Change the border color to purple */
+}
+
+/* Text On Top About Us Page */
+/* Text On Top About Us Page */
+.container {
+  position: relative;
+  width: 100%; /* Adjust the container width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  text-align: center; /* Center the text within the container */
+  height: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow to the container */
+  
+}
+
+/* Image styling */
+.image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 5em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #eff320;
+}
+
+.content h2:nth-child(2) {
+  color: #ffae17;
+  animation: animate 4s ease-in-out infinite;
+}
+/* para in about us click button */
+.pvis {
+  color: orange;
+ padding-left: 20px; 
+ padding-right: 20px;
+}
+
+
+@keyframes animate {
+  0%, 100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  
+}
+.button-zoom {
+  transition: transform 0.3s ease;
+}
+
+.button-zoom.zoom-in {
+  transform: scale(1.1);
+}
+
+.image2{
+  width: 100%;
+  height: 100%;
+}
+ /* Styles for the button */
+ .cta button {
+  background-color: #e99f15;
+  color: #fff;
+  border: cadetblue;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: background-color 0.6s;
+  margin-right: 20px;
+}
+
+/* Styles for the button on hover */
+.cta:hover button {
+  background-color: #ff6b6b;
+
+}
+
+/* Styles for the description */
+.description {
+  display: none;
+  position: fixed;
+  background-color: #000000;
+ 
+  font-size: 12px;
+  box-shadow: 0 0 5px rgb(255, 254, 254);
+}
+
+/* Show the description when hovering the .cta element */
+.cta:hover .description {
+  display: block;
+  padding: 5px 5px;
+}
+
+/* Style for the image within the description */
+.description-image {
+  display: flex; /* Makes the image a block-level element */
+  margin-top: 0px; /* Adds space above the image */
+  max-width: 60%; /* Ensure the image doesn't exceed its container width */
+  height: 60px; /* Preserve the aspect ratio */
+  margin-left: 80px;
+}
+.more{
+  padding: 20px;
+}

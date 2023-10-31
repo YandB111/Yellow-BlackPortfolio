@@ -1,0 +1,159 @@
+/* Created By : Mohammad Al Hefel */
+:root {
+    --main-color: #110e0b;
+}
+
+.service {
+    background-color: rgb(238, 132, 11);
+    background-image: url('../Image/ServicePage.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.container2 {
+    width: 100%;
+    height: 100%;
+    padding: 0% 10% 10% 10%; /* Added top padding to push content below the navbar */
+   
+}
+
+.container2 h2 {
+    text-align: center;
+    padding-top: 6%;
+    margin-bottom: 80px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.container2 h2::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 5px;
+
+    border-radius: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+
+}
+
+
+.row .service {
+    padding: 20px 15px;
+    background: transparent;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(26, 22, 22);
+    color: orange;
+    
+}
+
+.row .service:hover {
+    color: #f7f30b;
+    background-color: var(--main-color);
+    transform: scale(1.05);
+}
+
+.row .service i {
+    color: var(--main-color);
+    margin-bottom: 20px;
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+.row .service:hover i {
+    color: #fff;
+}
+
+.row .service h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service:hover .image {
+    border-radius: 100%;
+}
+
+.image{
+    height: 140px;
+    width: 140px;
+}
+
+/* Water effect header */
+.water-effect {
+    font-size: 4em; /* Increase the text size */
+    animation: water 2s infinite ease-in-out;
+  
+  }
+  
+  @keyframes water {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(2px, -2px);
+    }
+    50% {
+      transform: translate(-2px, 2px);
+    }
+    75% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(-2px, 2px);
+    }
+  } /* Styles for the button */
+  .cta button {
+      background-color: #e99f15;
+      color: #fff;
+      border: cadetblue;
+      padding: 8px 24px;
+      cursor: pointer;
+      transition: background-color 0.6s;
+      margin-right: 20px;
+    }
+    
+    /* Styles for the button on hover */
+    .cta:hover button {
+      background-color: #ff6b6b;
+    
+    }
+    
+    /* Styles for the description */
+    .description {
+      display: none;
+      position: fixed;
+      background-color: #000000;
+     
+      font-size: 12px;
+      box-shadow: 0 0 5px rgb(255, 254, 254);
+    }
+    
+    /* Show the description when hovering the .cta element */
+    .cta:hover .description {
+      display: block;
+      padding: 5px 5px;
+    }
+    
+    /* Style for the image within the description */
+    .description-image {
+      display: flex; /* Makes the image a block-level element */
+      margin-top: 0px; /* Adds space above the image */
+      max-width: 60%; /* Ensure the image doesn't exceed its container width */
+      height: 70px; /* Preserve the aspect ratio */
+      margin-left: 80px;
+    }
+    .more{
+      padding: 20px;
+    }
